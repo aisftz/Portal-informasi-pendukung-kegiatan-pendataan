@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#102a43">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <meta name="description" content="Portal informasi Pendataan Status Pemulihan (PSP) Pascabencana Sumatera 2026.">
+  <title>PSP Pascabencana Sumatera 2026 | Beranda</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: '#102a43', navy: '#153e5c', ocean: '#146c94', skysoft: '#eaf5fb',
+            teal: '#2a9d8f', gold: '#f4b942', paper: '#f7fafc'
+          },
+          boxShadow: { soft: '0 18px 45px rgba(16,42,67,.10)' },
+          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .hero-grid { background-image: radial-gradient(rgba(255,255,255,.12) 1px, transparent 1px); background-size: 22px 22px; }
+    .text-balance { text-wrap: balance; }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; } }
+  </style>
+</head>
+<body class="bg-paper font-sans text-slate-700 antialiased">
+  <div class="bg-ink text-white">
+    <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-2 px-5 py-2.5 text-xs sm:px-8 lg:px-10">
+      <p class="flex items-center gap-2"><span class="inline-block h-2 w-2 rounded-full bg-teal"></span> Portal Informasi Petugas · PSP Pascabencana Sumatera 2026</p>
+      <p class="hidden sm:block text-white/70">Informasi kegiatan dan dokumen lapangan</p>
+    </div>
+  </div>
+
+  <header class="sticky top-0 z-40 border-b border-slate-200/80 bg-white/95 backdrop-blur">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8 lg:px-10" aria-label="Navigasi utama">
+      <a href="index.html" class="flex items-center gap-3" aria-label="PSP Beranda">
+        <span class="flex h-11 w-11 items-center justify-center rounded-2xl bg-ink text-sm font-black tracking-tight text-white shadow-md shadow-ink/15">PSP</span>
+        <span class="leading-tight"><span class="block text-sm font-extrabold tracking-tight text-ink sm:text-base">PSP Pascabencana</span><span class="mt-0.5 block text-xs text-slate-500">Sumatera · 2026</span></span>
+      </a>
+      <button id="menuToggle" class="inline-flex items-center justify-center rounded-xl border border-slate-200 p-2.5 text-ink md:hidden" aria-label="Buka menu" aria-expanded="false" aria-controls="mobileMenu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+      <div class="hidden items-center gap-8 md:flex">
+        <a href="index.html" class="text-sm font-bold text-ocean">Beranda</a>
+        <a href="#tentang" class="text-sm font-medium text-slate-600 transition hover:text-ocean">Tentang PSP</a>
+        <a href="#cakupan" class="text-sm font-medium text-slate-600 transition hover:text-ocean">Cakupan Data</a>
+        <a href="dokumen.html" class="inline-flex items-center gap-2 rounded-xl bg-ink px-5 py-3 text-sm font-bold text-white shadow-lg shadow-ink/15 transition hover:-translate-y-0.5 hover:bg-ocean">Pusat Dokumen <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+    <div id="mobileMenu" class="hidden border-t border-slate-100 bg-white px-5 py-3 md:hidden">
+      <a href="index.html" class="block rounded-lg px-3 py-2.5 text-sm font-bold text-ocean">Beranda</a>
+      <a href="#tentang" class="block rounded-lg px-3 py-2.5 text-sm font-medium text-slate-600">Tentang PSP</a>
+      <a href="#cakupan" class="block rounded-lg px-3 py-2.5 text-sm font-medium text-slate-600">Cakupan Data</a>
+      <a href="dokumen.html" class="mt-2 block rounded-lg bg-ink px-3 py-2.5 text-sm font-bold text-white">Pusat Dokumen ↗</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="relative isolate overflow-hidden bg-ink text-white">
+      <div class="hero-grid absolute inset-0 -z-10 opacity-50"></div>
+      <div class="absolute -right-32 -top-44 -z-10 h-[32rem] w-[32rem] rounded-full border-[70px] border-white/[0.045]"></div>
+      <div class="absolute -bottom-64 left-[38%] -z-10 h-[28rem] w-[28rem] rounded-full bg-ocean/25 blur-3xl"></div>
+      <div class="mx-auto grid max-w-7xl items-center gap-12 px-5 py-16 sm:px-8 sm:py-20 lg:grid-cols-[1.08fr_.92fr] lg:px-10 lg:py-24">
+        <div class="max-w-2xl">
+          <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-2 text-xs font-semibold tracking-wide text-sky-100 backdrop-blur">
+            <span class="h-2 w-2 rounded-full bg-gold"></span> PENDATAAN STATUS PEMULIHAN · 2026
+          </div>
+          <h1 class="text-balance max-w-3xl text-4xl font-black leading-[1.12] tracking-tight sm:text-5xl lg:text-6xl">Data yang akurat, <span class="text-sky-300">pemulihan</span> yang lebih terarah.</h1>
+          <p class="mt-6 max-w-xl text-base leading-8 text-slate-200 sm:text-lg">Pendataan Status Pemulihan (PSP) Pascabencana Sumatera 2026 membantu menggambarkan kondisi keluarga, wilayah, serta infrastruktur terdampak sebagai dasar pemantauan dan evaluasi pemulihan.</p>
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+            <a href="dokumen.html" class="inline-flex items-center justify-center gap-3 rounded-xl bg-gold px-6 py-3.5 text-sm font-extrabold text-ink shadow-lg shadow-black/10 transition hover:-translate-y-0.5 hover:bg-amber-300">Buka Dokumen Petugas <span aria-hidden="true">→</span></a>
+            <a href="#tentang" class="inline-flex items-center justify-center gap-2 rounded-xl border border-white/25 bg-white/[0.06] px-6 py-3.5 text-sm font-bold text-white transition hover:bg-white/10">Kenali Pendataan PSP</a>
+          </div>
+          <div class="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3 text-xs font-medium text-slate-300">
+            <span class="flex items-center gap-2"><svg class="h-4 w-4 text-teal-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m5 12 4 4L19 6"/></svg> Berbasis pedoman pencacah</span>
+            <span class="flex items-center gap-2"><svg class="h-4 w-4 text-teal-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m5 12 4 4L19 6"/></svg> Tiga unit pendataan</span>
+          </div>
+        </div>
+
+        <div class="relative mx-auto w-full max-w-xl lg:ml-auto">
+          <div class="absolute -left-4 top-10 h-24 w-24 rounded-3xl bg-teal/25 blur-xl"></div>
+          <div class="relative overflow-hidden rounded-[2rem] border border-white/15 bg-white/[0.08] p-4 shadow-2xl shadow-black/20 backdrop-blur-md sm:p-6">
+            <div class="flex items-center justify-between gap-3 border-b border-white/10 pb-5">
+              <div><p class="text-xs font-semibold uppercase tracking-[.18em] text-sky-200">Ringkasan Kegiatan</p><p class="mt-1 text-lg font-bold text-white">PSP Sumatera 2026</p></div>
+              <span class="rounded-full bg-teal/20 px-3 py-1.5 text-xs font-bold text-teal-100">Lapangan</span>
+            </div>
+            <div class="grid grid-cols-2 gap-3 py-5 sm:gap-4">
+              <div class="rounded-2xl border border-white/10 bg-ink/30 p-4 sm:p-5"><p class="text-sm text-slate-300">Cakupan wilayah</p><p class="mt-3 text-3xl font-black tracking-tight sm:text-4xl">48</p><p class="mt-1 text-xs text-slate-400">kabupaten/kota</p></div>
+              <div class="rounded-2xl border border-white/10 bg-ink/30 p-4 sm:p-5"><p class="text-sm text-slate-300">Provinsi</p><p class="mt-3 text-3xl font-black tracking-tight sm:text-4xl">3</p><p class="mt-1 text-xs text-slate-400">Aceh, Sumut, Sumbar</p></div>
+              <div class="col-span-2 rounded-2xl bg-white p-4 text-ink sm:p-5">
+                <div class="flex items-center justify-between gap-3"><div><p class="text-sm font-bold text-slate-500">Periode pendataan lapangan</p><p class="mt-1 text-lg font-extrabold sm:text-xl">11 Oktober – 10 November 2026</p></div><span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-skysoft text-ocean"><svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="5" width="18" height="16" rx="2"/><path stroke-linecap="round" d="M16 3v4M8 3v4M3 10h18"/></svg></span></div>
+                <div class="mt-4 h-2 overflow-hidden rounded-full bg-slate-100"><div class="h-full w-[12%] rounded-full bg-teal"></div></div>
+                <p class="mt-2 text-xs text-slate-500">Jadwal mengacu pada Buku 2: Pedoman Pencacah PSP Pascabencana Sumatera 2026.</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.06] p-4">
+              <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-sky-300/15 text-sky-200"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3 4 7v5c0 5 3.4 7.8 8 9 4.6-1.2 8-4 8-9V7l-8-4Z"/><path stroke-linecap="round" stroke-linejoin="round" d="m8.5 12 2.2 2.2 4.8-4.8"/></svg></span>
+              <div><p class="text-sm font-bold text-white">Utamakan kualitas data</p><p class="mt-1 text-xs leading-5 text-slate-300">Lengkap, wajar, konsisten, dan sesuai hasil wawancara serta observasi.</p></div>
+            </div>
+          </div>
+          <div class="absolute -right-4 -top-5 hidden rounded-2xl bg-gold p-3 text-ink shadow-xl sm:block"><svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3 14.8 8.7 21 9.6l-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9L12 3Z"/></svg></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tentang" class="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-10 lg:py-20">
+      <div class="grid gap-10 lg:grid-cols-[.78fr_1.22fr] lg:items-start">
+        <div>
+          <p class="text-xs font-extrabold uppercase tracking-[.2em] text-ocean">Tentang kegiatan</p>
+          <h2 class="mt-3 text-3xl font-black leading-tight tracking-tight text-ink sm:text-4xl">Memahami kondisi setelah bencana, dari keluarga hingga layanan dasar.</h2>
+        </div>
+        <div class="space-y-5 text-base leading-8 text-slate-600">
+          <p>Pendataan PSP Pascabencana Sumatera 2026 diselenggarakan untuk memperoleh informasi yang akurat, terpadu, dan terkini mengenai perkembangan pemulihan di wilayah terdampak bencana.</p>
+          <p>Informasi yang dikumpulkan membantu mengidentifikasi kebutuhan pemulihan yang belum terpenuhi, kondisi hunian dan mata pencaharian, bantuan yang diterima, serta keberfungsian layanan pendidikan dan kesehatan.</p>
+          <div class="rounded-2xl border-l-4 border-teal bg-skysoft p-5 text-sm leading-7 text-ink"><strong>Tujuan utama:</strong> menyediakan dasar data untuk pemantauan, evaluasi, dan perumusan kebijakan pemulihan pascabencana.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cakupan" class="border-y border-slate-200 bg-white py-16 sm:py-20">
+      <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
+        <div class="mx-auto max-w-2xl text-center"><p class="text-xs font-extrabold uppercase tracking-[.2em] text-ocean">Cakupan pendataan</p><h2 class="mt-3 text-3xl font-black tracking-tight text-ink sm:text-4xl">Tiga unit, satu gambaran pemulihan</h2><p class="mt-4 leading-7 text-slate-500">Pengumpulan informasi dilakukan pada keluarga, desa/kelurahan, serta infrastruktur pendidikan dan kesehatan.</p></div>
+        <div class="mt-10 grid gap-5 md:grid-cols-3">
+          <article class="group rounded-3xl border border-slate-200 bg-paper p-6 transition hover:-translate-y-1 hover:border-sky-200 hover:shadow-soft sm:p-7">
+            <span class="flex h-14 w-14 items-center justify-center rounded-2xl bg-skysoft text-ocean"><svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path stroke-linecap="round" stroke-linejoin="round" d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1V10Z"/></svg></span>
+            <p class="mt-6 text-xs font-extrabold uppercase tracking-wider text-ocean">BENCANA2026-K</p><h3 class="mt-2 text-xl font-extrabold text-ink">Keluarga</h3><p class="mt-3 text-sm leading-7 text-slate-600">Menggali kondisi perumahan, ketenagakerjaan dan aset, bantuan, dampak bencana, kebutuhan, serta kondisi sosial ekonomi keluarga.</p><div class="mt-5 border-t border-slate-200 pt-4 text-xs font-semibold text-slate-500">Metode: wawancara keluarga secara door-to-door</div>
+          </article>
+          <article class="group rounded-3xl border border-slate-200 bg-paper p-6 transition hover:-translate-y-1 hover:border-sky-200 hover:shadow-soft sm:p-7">
+            <span class="flex h-14 w-14 items-center justify-center rounded-2xl bg-teal/10 text-teal"><svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path stroke-linecap="round" stroke-linejoin="round" d="M3 21h18M5 21V7l7-4 7 4v14M9 10h.01M15 10h.01M9 14h.01M15 14h.01M10 21v-3h4v3"/></svg></span>
+            <p class="mt-6 text-xs font-extrabold uppercase tracking-wider text-teal">BENCANA2026-D</p><h3 class="mt-2 text-xl font-extrabold text-ink">Desa / Kelurahan</h3><p class="mt-3 text-sm leading-7 text-slate-600">Mencatat kondisi pemulihan perumahan dan permukiman, infrastruktur, sosial, ekonomi, lintas sektor, serta kesiapsiagaan dan risiko.</p><div class="mt-5 border-t border-slate-200 pt-4 text-xs font-semibold text-slate-500">Metode: wawancara narasumber berwenang</div>
+          </article>
+          <article class="group rounded-3xl border border-slate-200 bg-paper p-6 transition hover:-translate-y-1 hover:border-sky-200 hover:shadow-soft sm:p-7">
+            <span class="flex h-14 w-14 items-center justify-center rounded-2xl bg-amber-100 text-amber-700"><svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path stroke-linecap="round" stroke-linejoin="round" d="M3 21h18M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16M9 7h2m2 0h2M9 11h2m2 0h2M9 15h2m2 0h2M10 21v-3h4v3"/></svg></span>
+            <p class="mt-6 text-xs font-extrabold uppercase tracking-wider text-amber-700">BENCANA2026-INFRA</p><h3 class="mt-2 text-xl font-extrabold text-ink">Infrastruktur</h3><p class="mt-3 text-sm leading-7 text-slate-600">Memantau kondisi fisik, kerusakan, kebutuhan pemulihan, dan keberfungsian fasilitas pendidikan serta kesehatan.</p><div class="mt-5 border-t border-slate-200 pt-4 text-xs font-semibold text-slate-500">Metode: wawancara dan observasi fasilitas</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-10 lg:py-20">
+      <div class="grid gap-10 lg:grid-cols-[1fr_1fr] lg:items-center">
+        <div class="relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-ocean to-ink p-7 text-white sm:p-10">
+          <div class="absolute -right-14 -top-14 h-48 w-48 rounded-full border-[28px] border-white/10"></div>
+          <p class="text-xs font-extrabold uppercase tracking-[.2em] text-sky-200">Wilayah sasaran</p><h2 class="mt-3 text-3xl font-black tracking-tight">Sumatera</h2><p class="mt-3 max-w-md text-sm leading-7 text-slate-200">Pendataan mencakup 48 kabupaten/kota terdampak di tiga provinsi.</p>
+          <div class="mt-7 grid grid-cols-1 gap-3 sm:grid-cols-3"><div class="rounded-2xl border border-white/10 bg-white/10 p-4"><span class="text-xs text-sky-200">01</span><p class="mt-2 font-bold">Aceh</p></div><div class="rounded-2xl border border-white/10 bg-white/10 p-4"><span class="text-xs text-sky-200">02</span><p class="mt-2 font-bold">Sumatera Utara</p></div><div class="rounded-2xl border border-white/10 bg-white/10 p-4"><span class="text-xs text-sky-200">03</span><p class="mt-2 font-bold">Sumatera Barat</p></div></div>
+        </div>
+        <div>
+          <p class="text-xs font-extrabold uppercase tracking-[.2em] text-ocean">Panduan singkat petugas</p><h2 class="mt-3 text-3xl font-black leading-tight tracking-tight text-ink">Sebelum dan saat turun ke lapangan</h2>
+          <div class="mt-7 space-y-5">
+            <div class="flex gap-4"><span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-skysoft text-sm font-black text-ocean">01</span><div><h3 class="font-bold text-ink">Pelajari pedoman dan instrumen</h3><p class="mt-1 text-sm leading-6 text-slate-500">Pahami konsep, definisi, sasaran, dan cara pengisian kuesioner sebelum pendataan.</p></div></div>
+            <div class="flex gap-4"><span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-skysoft text-sm font-black text-ocean">02</span><div><h3 class="font-bold text-ink">Wawancarai sumber yang relevan</h3><p class="mt-1 text-sm leading-6 text-slate-500">Pastikan responden memahami kondisi keluarga, desa, atau infrastruktur yang didata.</p></div></div>
+            <div class="flex gap-4"><span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-skysoft text-sm font-black text-ocean">03</span><div><h3 class="font-bold text-ink">Periksa kualitas isian dan jaga kerahasiaan</h3><p class="mt-1 text-sm leading-6 text-slate-500">Periksa kelengkapan, kewajaran, serta konsistensi data; lindungi informasi responden.</p></div></div>
+            <div class="flex gap-4"><span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-skysoft text-sm font-black text-ocean">04</span><div><h3 class="font-bold text-ink">Gunakan aplikasi FASIH</h3><p class="mt-1 text-sm leading-6 text-slate-500">Lakukan pendataan dan pengiriman hasil sesuai mekanisme dan penugasan yang ditetapkan.</p></div></div>
+          </div>
+          <a href="dokumen.html" class="mt-8 inline-flex items-center gap-2 text-sm font-extrabold text-ocean transition hover:gap-3">Lihat semua dokumen petugas <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="px-5 pb-16 sm:px-8 lg:px-10 lg:pb-20">
+      <div class="mx-auto flex max-w-7xl flex-col items-start justify-between gap-6 rounded-[2rem] bg-skysoft px-7 py-8 sm:px-10 sm:py-10 md:flex-row md:items-center">
+        <div class="max-w-2xl"><p class="text-xs font-extrabold uppercase tracking-[.2em] text-ocean">Butuh berkas pendataan?</p><h2 class="mt-2 text-2xl font-black tracking-tight text-ink sm:text-3xl">Semua bahan petugas dalam satu halaman.</h2><p class="mt-3 text-sm leading-7 text-slate-600">Buka pusat dokumen untuk mengakses buku pedoman dan tautan berkas pendukung lainnya.</p></div>
+        <a href="dokumen.html" class="inline-flex shrink-0 items-center gap-3 rounded-xl bg-ink px-6 py-4 text-sm font-extrabold text-white shadow-lg shadow-ink/15 transition hover:-translate-y-0.5 hover:bg-ocean">Menuju Pusat Dokumen <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-ink text-white">
+    <div class="mx-auto flex max-w-7xl flex-col gap-7 px-5 py-9 sm:px-8 md:flex-row md:items-center md:justify-between lg:px-10">
+      <div class="flex items-center gap-3"><span class="flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 text-xs font-black">PSP</span><div><p class="font-extrabold">PSP Pascabencana Sumatera 2026</p><p class="mt-1 text-xs text-slate-300">Portal informasi pendukung kegiatan pendataan</p></div></div>
+      <div class="max-w-xl text-xs leading-6 text-slate-300 md:text-right"><p>PSP Pascabencana Sumatera 2026</p></div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
